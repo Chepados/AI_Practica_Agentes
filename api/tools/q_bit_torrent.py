@@ -1,0 +1,56 @@
+import qbittorrentapi
+from langchain.tools import tool
+import os
+
+torrent_files_dir = "../torrents/"
+
+conn_info = dict(
+    host="localhost",
+    port=8081,
+    username="admin",
+    password="316440",
+)
+
+@tool
+def get_available_torrent_files() -> str:
+    """Get a list of available torrent files."""
+    return str(os.listdir(torrent_files_dir))
+
+@tool
+def download_torrent_file(file_name: str) -> str:
+    """Download a torrent file by its name."""
+    with qbittorrentapi.Client(**conn_info) as qbt_client:
+        qbt_client.torrents_add(
+            torrent_files=[torrent_files_dir + file_name],
+            savepath="/download",
+            category="movies",
+        )
+    return f"Torrent file downloaded: {file_name}"
+
+
+@tool
+def get_torrent_client_status() -> str:
+    """Ver la información de los torrents que se están descargando, el resultado es una lista de diccionarios con la siguiente información:
+    - name: el nombre del torrent
+    - dlspeed: la velocidad de descarga en MB/s
+    - eta: el tiempo estimado de descarga en minutos
+    - progress: el progreso de la descarga en porcentaje
+    - size: el tamaño del torrent en GB
+    - state: el estado del torrent (downloading, paused, etc.)
+    - La función no recibe ningún argumento y devuelve una lista de diccionarios con la información de los torrents que se están descargando."""
+    with qbittorrentapi.Client(**conn_info) as qbt_client:
+        info = qbt_client.torrents_info()
+        processed_info = []
+
+
+        for info_dict in info:
+            processed_info.append(dict())
+            processed_info[-1]["name"] = info_dict["name"]        
+            processed_info[-1]["dlspeed"] = info_dict["dlspeed"] / 1024 ** 2 
+            processed_info[-1]["eta"] = info_dict["eta"] / 60
+            processed_info[-1]["progress"] = info_dict["progress"] * 100
+            processed_info[-1]["size"] = info_dict["size"] / (2 ** 30)
+            processed_info[-1]["state"] = info_dict["state"]
+
+
+    return str(processed_info)

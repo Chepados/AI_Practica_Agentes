@@ -1,0 +1,1 @@
+{"StartTimeUtc":"2026-04-20T16:09:57.0409576Z","EndTimeUtc":"2026-04-20T16:09:57.1939843Z","Status":"Completed","Name":"Eliminar archivos temporales","Key":"DeleteCacheFiles","Id":"241d4fcb19a1d557ee62428e411da609"}

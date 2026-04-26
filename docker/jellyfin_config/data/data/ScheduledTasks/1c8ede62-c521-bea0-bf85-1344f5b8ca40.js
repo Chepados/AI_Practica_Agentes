@@ -1,0 +1,1 @@
+{"StartTimeUtc":"2026-04-20T16:09:57.0409597Z","EndTimeUtc":"2026-04-20T16:09:57.0452642Z","Status":"Completed","Name":"Limpiar registros","Key":"CleanLogFiles","Id":"1c8ede62c521bea0bf851344f5b8ca40"}

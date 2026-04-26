@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+dotenv
+langchain
+langchain_google_genai
+langchain_groq
+pandas
+requests
+playwright
+qbittorrent-api
