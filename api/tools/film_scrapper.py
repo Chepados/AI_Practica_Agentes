@@ -20,9 +20,7 @@ else:
     print("No se encontró clave para lena api de TMDB.")
     TMDB_API_KEY = None
 
-
-
-def search_movie(string: str) -> str:
+def search_movie(string: str) -> dict:
     """
     Busca una película en la base de datos de TMDB y devuelve un diccionario de python con la información relevante de todas las películas que coincidan con la búsqueda. La información relevante incluye el título, la sinopsis, la fecha de lanzamiento, la valoración media, el número de valoraciones, la ruta del poster y la ruta del backdrop.
     """  
@@ -35,7 +33,11 @@ def search_movie(string: str) -> str:
     }
 
     response = requests.get(url, headers=headers)
-    response_df = pd.DataFrame(response.json()['results'])[["title", "overview", "release_date", "vote_average", "vote_count", "poster_path", "backdrop_path"]]
+    results = response.json().get('results', [])
+    if not results:
+        return []
+        
+    response_df = pd.DataFrame(results)[["title", "overview", "release_date", "vote_average", "vote_count", "poster_path", "backdrop_path"]]
     return response_df.to_dict(orient="records")
 
 
