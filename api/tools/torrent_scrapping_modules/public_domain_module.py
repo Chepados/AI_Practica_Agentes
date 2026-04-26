@@ -4,7 +4,7 @@ from pprint import pprint
 from langchain.tools import tool
 import os
 
-def search_torrent_public_domain(movie_name: str) -> list[dict] | str:
+def search_torrent(movie_name: str) -> list[dict] | str:
     """
     Busca una película en publicdomaintorrents.info y devuelve un listado de resultados con sus respectivos links.
     """
@@ -45,12 +45,12 @@ def search_torrent_public_domain(movie_name: str) -> list[dict] | str:
     return torrents
     
 
-def get_torrent_from_link_public_domain(link_data: dict[str, str]) -> str:
+def get_torrent_from_link(link: str) -> str:
     """
     Descarga el archivo .torrent a partir de un link a la página de la película en publicdomaintorrents.info.
     """
     try:
-        response = requests.get(link_data["link"], timeout=15)
+        response = requests.get(link, timeout=15)
         response.raise_for_status()
     except Exception as e:
         return f"Error al acceder al link de la película: {e}"
@@ -85,9 +85,9 @@ def get_torrent_from_link_public_domain(link_data: dict[str, str]) -> str:
         torrent_response.raise_for_status()
         
         # Extraemos el nombre del archivo de la URL
-        filename = download_url.split("file=")[-1] if "file=" in download_url else f"{link_data.get('name', 'movie')}.torrent"
+        filename = download_url.split("file=")[-1]
         
-        save_dir = "torrents"
+        save_dir = "../torrents"
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
         

@@ -1,9 +1,9 @@
 from playwright.sync_api import sync_playwright
 from pprint import pprint
 from langchain.tools import tool
+from rich import print as rprint
 
 
-@tool
 def search_torrent(movie_name : str) -> str:
     """
     Encuentra un listado de películas disponibles para descargar y sus respectivos links de descarga.
@@ -20,6 +20,7 @@ def search_torrent(movie_name : str) -> str:
         page.wait_for_selector(".card-body")
         films = page.locator('.card-body>p>span').all()
 
+
         torrents = list()
 
         for film in films:
@@ -34,11 +35,10 @@ def search_torrent(movie_name : str) -> str:
                     "link": "No se ha encontrado un link de descarga para esta película"
                 })
 
-        browser.close()
-        return str(torrents)
+
+    return torrents
     
 
-@tool    
 def get_torrent_from_link(link : str) -> str:
     """
     Ejecuta la descarga de un archivo .torrent a partir de un link obtenido en la función search_torrent.
@@ -57,5 +57,8 @@ def get_torrent_from_link(link : str) -> str:
         download = download_info.value
         download.save_as(f"../torrents/{download.suggested_filename}")
 
-        browser.close()
-        return f"{download.suggested_filename} descargado correctamente"
+    return f"{download.suggested_filename} descargado correctamente"
+    
+if __name__ == "__main__":
+    rprint(search_torrent("spiderman"))
+    #get_torrent_from_link('https://dontorrent.reisen/pelicula/10890/Spider-Man-Spiderman-Mastered-in-4K')
