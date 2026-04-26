@@ -10,9 +10,9 @@ from rich import print as rprint
 
 
 
-if not getenv("TMDB_API_KEY"):
+if getenv("TMDB_API_KEY"):
     print("La api_key de TMDB se tomó de las variables de entorno.")
-    TMDB_API_KEY = get_key(".env", "TMDB_API_KEY")
+    TMDB_API_KEY = getenv("TMDB_API_KEY")
 elif get_key(".env", "TMDB_API_KEY"):
     print("La api_key de TMDB se tomó del archivo .env.")
     TMDB_API_KEY = get_key(".env", "TMDB_API_KEY")

@@ -1,8 +1,12 @@
 import qbittorrentapi
 from langchain.tools import tool
+from rich import print as rprint
 import os
+from time import sleep
 
 torrent_files_dir = "../torrents/"
+
+print(os.getcwd())
 
 conn_info = dict(
     host="localhost",
@@ -11,12 +15,10 @@ conn_info = dict(
     password="316440",
 )
 
-@tool
 def get_available_torrent_files() -> str:
     """Get a list of available torrent files."""
-    return str(os.listdir(torrent_files_dir))
+    return os.listdir(torrent_files_dir)
 
-@tool
 def download_torrent_file(file_name: str) -> str:
     """Download a torrent file by its name."""
     with qbittorrentapi.Client(**conn_info) as qbt_client:
@@ -28,7 +30,6 @@ def download_torrent_file(file_name: str) -> str:
     return f"Torrent file downloaded: {file_name}"
 
 
-@tool
 def get_torrent_client_status() -> str:
     """Ver la información de los torrents que se están descargando, el resultado es una lista de diccionarios con la siguiente información:
     - name: el nombre del torrent
@@ -51,6 +52,21 @@ def get_torrent_client_status() -> str:
             processed_info[-1]["progress"] = info_dict["progress"] * 100
             processed_info[-1]["size"] = info_dict["size"] / (2 ** 30)
             processed_info[-1]["state"] = info_dict["state"]
+            processed_info[-1]["hash"] = info_dict["hash"]
+        
+        print(info)
 
 
-    return str(processed_info)
+    return processed_info
+
+def remove_torrent_file(hash: str) -> str:
+    """Remove a torrent file by its hash."""
+    with qbittorrentapi.Client(**conn_info) as qbt_client:
+        qbt_client.torrents_delete(delete_files=False, torrent_hashes=hash)
+    return f"Torrent file removed: {hash}"
+
+if __name__ == "__main__":
+    print(get_available_torrent_files())
+    print(download_torrent_file("La_lista_de_Schindler_1993_HDRip.torrent"))
+    rprint(get_torrent_client_status())
+
