@@ -22,8 +22,6 @@ headers = {
     }
 
 
-
-
 class ProfileManager:
     def __init__(self):
 
@@ -45,17 +43,17 @@ class ProfileManager:
         self.genres_df = response
 
 
-    def create_profile(self, name: str):
+    def create_profile(self, name: str) -> None:
         """Crea un nuevo perfil con el nombre dado."""
         self.profiles[name] = {}
 
-    def delete_profile(self, name: str):
+    def delete_profile(self, name: str) -> None:
         """Elimina el perfil con el nombre dado."""
         assert name in self.profiles.keys(), f"El perfil {name} no existe."
         del self.profiles[name]
 
-    def set_preference(self, profile_name: str, genre_name: str, preference: int):
-        """Establecer una preferencia para el recomendador. Debes especificar un perfil, un genero, y la nota mínimca que se le debe dar a una película para que se recomiende. La nota mínima debe ser un número entero entre 1 y 10."""
+    def set_preference(self, profile_name: str, genre_name: str, preference: int) -> None:
+        """Establecer una preferencia para el recomendador. Debes especificar un perfil, un genero, y la nota mínima que se le debe dar a una película para que se recomiende. La nota mínima debe ser un número entero entre 1 y 10."""
         assert profile_name in self.profiles.keys(), f"El perfil {profile_name} no existe."
         assert genre_name in self.genres_df["name"].values, f"El género {genre_name} no existe."
         assert preference in range(1, 11), f"La preferencia debe ser un número entero entre 1 y 10."
@@ -68,13 +66,17 @@ class ProfileManager:
         assert profile_name in self.profiles.keys(), f"El perfil {profile_name} no existe."
         return self.profiles[profile_name]
     
-    def del_preference(self, profile_name: str, genre_name: str):
+    def del_preference(self, profile_name: str, genre_name: str) -> None:
         """Eliminar una preferencia para el recomendador. Debes especificar un perfil y un genero."""
 
         assert profile_name in self.profiles.keys(), f"El perfil {profile_name} no existe."
         assert genre_name in self.genres_df["name"].values, f"El género {genre_name} no existe."
 
         del self.profiles[profile_name][genre_name]
+
+    def get_genres(self) -> list:
+        """Devuelve una lista con los géneros disponibles para establecer preferencias en los perfiles."""
+        return self.genres_df["name"].tolist()
 
     def recomend_movies(self, profile_name: str) -> list:
         """Devuelve una lista de recomendaciones de películas para un perfil específico. La recomendación se basa en las preferencias establecidas para ese perfil. Devuelve una lista de diccionarios con la información relevante de las películas recomendadas, ordenadas por popularidad de mayor a menor. La información relevante incluye el título, la sinopsis, la fecha de lanzamiento, la valoración media, el número de valoraciones, la ruta del poster y la ruta del backdrop."""

@@ -7,7 +7,7 @@ from rich import print as rprint
 
 def get_available_modules() -> list[str]:
     """
-    Devuelve una lista de los módulos de scrapping disponibles en la carpeta torrent_scrapping_modules.
+    Devuelve una lista de los módulos de scrapping disponibles.
     """
 
     lista = os.listdir("./tools/torrent_scrapping_modules")

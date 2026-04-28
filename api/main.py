@@ -15,7 +15,16 @@ from langchain_groq import ChatGroq
 
 
 
-from tools import search_movie, search_torrent, get_torrent_from_link, get_available_torrent_files, download_torrent_file, get_torrent_client_status
+from tools import *
+from langchain_core.tools import Tool, StructuredTool
+
+search_movie_tool = Tool.from_function(search_movie)
+search_torrent_tool = Tool.from_function(search_torrent)
+get_torrent_from_link_tool = Tool.from_function(get_torrent_from_link)
+get_available_torrent_files_tool = Tool.from_function(get_available_torrent_files)
+download_torrent_file_tool = Tool.from_function(download_torrent_file)
+get_torrent_client_status_tool = Tool.from_function(get_torrent_client_status)
+
 
 CONTEXT = """
 Eres un agente conversacional para gestionar búsquedas y descargas de películas.
@@ -61,7 +70,6 @@ según sin se adaptan a lo que buscaba el usuario y que el almacenamiento no sea
 - Usa emojis ocasionalmente para claridad: 🎬 🔍 ⬇️
 
 RECUERDA: Cada elemento de lista DEBE tener <br> al final. Sin excepciones. esto es MUY importante, si haces una enumeración simpre tienes que estar bien formateada con <br> al final de cada elemento, si no lo haces así el usuario no podrá entender la información que le estás dando y se confundirá, así que por favor asegúrate de seguir esta regla de formato en cada respuesta que des.
-
 """
 
 class Agent_handler:
@@ -82,7 +90,7 @@ class Agent_handler:
             model=self.llm,
             checkpointer=self.checkpointer,
             system_prompt=CONTEXT,
-            tools = [search_movie, search_torrent, get_torrent_from_link, get_available_torrent_files, download_torrent_file, get_torrent_client_status]
+            tools = [search_movie_tool, search_torrent_tool, get_torrent_from_link_tool, get_available_torrent_files_tool, download_torrent_file_tool, get_torrent_client_status_tool]
         )
 
         

@@ -1,13 +1,10 @@
 import os
-
 import requests
-
 from dotenv import get_key
 from os import getenv
 import pandas as pd
 from langchain.tools import tool
 from rich import print as rprint
-
 
 
 if getenv("TMDB_API_KEY"):
@@ -36,7 +33,7 @@ def search_movie(string: str) -> dict:
     results = response.json().get('results', [])
     if not results:
         return []
-        
+        TMDB
     response_df = pd.DataFrame(results)[["title", "overview", "release_date", "vote_average", "vote_count", "poster_path", "backdrop_path"]]
     return response_df.to_dict(orient="records")
 

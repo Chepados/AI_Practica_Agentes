@@ -1,0 +1,1 @@
+{"StartTimeUtc":"2026-04-28T08:30:11.5696187Z","EndTimeUtc":"2026-04-28T08:30:12.7584356Z","Status":"Completed","Name":"Generar miniaturas de l\u00EDnea de tiempo","Key":"RefreshTrickplayImages","Id":"64f5f44cd30dc273cb9890205473bbcc"}
