@@ -12,7 +12,7 @@ services:
       - ../films:/download
       - ./torrent_config:/config
     restart: unless-stopped
-    network_mode: "host"
+    network_mode: host
     
   jellyfin:
     image: lscr.io/linuxserver/jellyfin:latest
@@ -25,5 +25,5 @@ services:
     volumes:
       - ./jellyfin_config:/config
       - ../films:/data/movies
-    network_mode: "host"
     restart: unless-stopped
+    network_mode: host

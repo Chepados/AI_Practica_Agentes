@@ -1,0 +1,538 @@
+(N) 2026-04-20T15:01:10 - qBittorrent v5.1.4 started. Process ID: 149
+(N) 2026-04-20T15:01:10 - Using config directory: /config/qBittorrent
+(N) 2026-04-20T15:01:10 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-20T15:01:10 - Peer ID: "-qB5140-"
+(I) 2026-04-20T15:01:10 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-20T15:01:10 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-20T15:01:10 - Local Peer Discovery support: ON
+(I) 2026-04-20T15:01:10 - Peer Exchange (PeX) support: ON
+(I) 2026-04-20T15:01:10 - Anonymous mode: OFF
+(I) 2026-04-20T15:01:10 - Encryption support: ON
+(I) 2026-04-20T15:01:10 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-20T15:01:10 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-20T15:01:10 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/6881"
+(I) 2026-04-20T15:01:10 - Successfully listening on IP. IP: "172.18.0.2". Port: "UTP/6881"
+(I) 2026-04-20T15:01:10 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-20T15:01:10 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(W) 2026-04-20T15:01:10 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2026-04-20T15:01:10 - Using built-in WebUI.
+(W) 2026-04-20T15:01:10 - Couldn't load WebUI translation for selected locale (C).
+(N) 2026-04-20T15:01:10 - WebUI: Now listening on IP: *, port: 8081
+(I) 2026-04-20T15:01:10 - Detected external IP. IP: "88.12.95.221"
+(I) 2026-04-20T15:01:10 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(I) 2026-04-20T15:01:10 - Successfully updated IP geolocation database.
+(N) 2026-04-20T15:05:43 - qBittorrent termination initiated
+(N) 2026-04-20T15:05:43 - Saving resume data completed.
+(N) 2026-04-20T15:05:43 - BitTorrent session successfully finished.
+(N) 2026-04-20T15:05:43 - qBittorrent is now ready to exit
+(N) 2026-04-20T15:05:52 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2026-04-20T15:05:52 - Using config directory: /config/qBittorrent
+(N) 2026-04-20T15:05:52 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-20T15:05:52 - Peer ID: "-qB5140-"
+(I) 2026-04-20T15:05:52 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-20T15:05:52 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-20T15:05:52 - Local Peer Discovery support: ON
+(I) 2026-04-20T15:05:52 - Peer Exchange (PeX) support: ON
+(I) 2026-04-20T15:05:52 - Anonymous mode: OFF
+(I) 2026-04-20T15:05:52 - Encryption support: ON
+(I) 2026-04-20T15:05:52 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-20T15:05:52 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-20T15:05:52 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/6881"
+(I) 2026-04-20T15:05:52 - Successfully listening on IP. IP: "172.18.0.2". Port: "UTP/6881"
+(I) 2026-04-20T15:05:52 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-20T15:05:52 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-04-20T15:05:52 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-20T15:05:52 - Using built-in WebUI.
+(W) 2026-04-20T15:05:52 - Couldn't load WebUI translation for selected locale (C).
+(N) 2026-04-20T15:05:52 - WebUI: Now listening on IP: *, port: 8081
+(I) 2026-04-20T15:05:52 - Detected external IP. IP: "88.12.95.221"
+(W) 2026-04-20T17:05:39 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.18.0.1, username: admin
+(W) 2026-04-20T17:05:42 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.18.0.1, username: admin
+(N) 2026-04-20T17:06:23 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2026-04-20T17:06:34 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-20T23:56:43 - qBittorrent termination initiated
+(N) 2026-04-20T23:56:43 - Saving resume data completed.
+(N) 2026-04-20T23:56:43 - BitTorrent session successfully finished.
+(N) 2026-04-20T23:56:43 - qBittorrent is now ready to exit
+(N) 2026-04-21T11:39:07 - qBittorrent v5.1.4 started. Process ID: 144
+(N) 2026-04-21T11:39:07 - Using config directory: /config/qBittorrent
+(N) 2026-04-21T11:39:07 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-21T11:39:07 - Peer ID: "-qB5140-"
+(I) 2026-04-21T11:39:07 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-21T11:39:07 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-21T11:39:07 - Local Peer Discovery support: ON
+(I) 2026-04-21T11:39:07 - Peer Exchange (PeX) support: ON
+(I) 2026-04-21T11:39:07 - Anonymous mode: OFF
+(I) 2026-04-21T11:39:07 - Encryption support: ON
+(I) 2026-04-21T11:39:07 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-21T11:39:07 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-21T11:39:07 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-21T11:39:07 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-04-21T11:39:07 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-21T11:39:07 - Using built-in WebUI.
+(N) 2026-04-21T11:39:07 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-21T11:39:07 - WebUI: Now listening on IP: *, port: 8081
+(N) 2026-04-21T11:44:11 - qBittorrent termination initiated
+(N) 2026-04-21T11:44:11 - Saving resume data completed.
+(N) 2026-04-21T11:44:11 - BitTorrent session successfully finished.
+(N) 2026-04-21T11:44:11 - qBittorrent is now ready to exit
+(N) 2026-04-21T11:44:21 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2026-04-21T11:44:21 - Using config directory: /config/qBittorrent
+(N) 2026-04-21T11:44:21 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-21T11:44:21 - Peer ID: "-qB5140-"
+(I) 2026-04-21T11:44:21 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-21T11:44:21 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-21T11:44:21 - Local Peer Discovery support: ON
+(I) 2026-04-21T11:44:21 - Peer Exchange (PeX) support: ON
+(I) 2026-04-21T11:44:21 - Anonymous mode: OFF
+(I) 2026-04-21T11:44:21 - Encryption support: ON
+(I) 2026-04-21T11:44:21 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-21T11:44:21 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-21T11:44:21 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/6881"
+(I) 2026-04-21T11:44:21 - Successfully listening on IP. IP: "172.18.0.2". Port: "UTP/6881"
+(I) 2026-04-21T11:44:21 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-21T11:44:21 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-04-21T11:44:21 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-21T11:44:21 - Using built-in WebUI.
+(N) 2026-04-21T11:44:21 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-21T11:44:21 - WebUI: Now listening on IP: *, port: 8081
+(W) 2026-04-21T11:44:37 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.18.0.1, username: admin
+(N) 2026-04-21T11:44:40 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2026-04-21T12:12:31 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2026-04-21T12:12:31 - Added new torrent. Torrent: "Bob Esponja -  Patricio Esponja [DvdRip][Español Castellano][2015]"
+(N) 2026-04-21T12:13:07 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2026-04-21T12:14:41 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2026-04-21T12:14:41 - Added new torrent. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(N) 2026-04-21T12:15:38 - Added new torrent. Torrent: "El castillo ambulante (2004).HDrip"
+(N) 2026-04-21T12:17:30 - qBittorrent termination initiated
+(N) 2026-04-21T12:17:30 - Saving resume data completed.
+(N) 2026-04-21T12:17:30 - BitTorrent session successfully finished.
+(N) 2026-04-21T12:17:30 - qBittorrent is now ready to exit
+(N) 2026-04-21T12:17:48 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2026-04-21T12:17:48 - Using config directory: /config/qBittorrent
+(N) 2026-04-21T12:17:48 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-21T12:17:48 - Peer ID: "-qB5140-"
+(I) 2026-04-21T12:17:48 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-21T12:17:48 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-21T12:17:48 - Local Peer Discovery support: ON
+(I) 2026-04-21T12:17:48 - Peer Exchange (PeX) support: ON
+(I) 2026-04-21T12:17:48 - Anonymous mode: OFF
+(I) 2026-04-21T12:17:48 - Encryption support: ON
+(I) 2026-04-21T12:17:48 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-21T12:17:48 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-21T12:17:48 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-21T12:17:48 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-21T12:17:48 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-21T12:17:48 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-04-21T12:17:48 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-21T12:17:48 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(N) 2026-04-21T12:17:48 - Restored torrent. Torrent: "Bob Esponja -  Patricio Esponja [DvdRip][Español Castellano][2015]"
+(N) 2026-04-21T12:17:48 - Restored torrent. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(N) 2026-04-21T12:17:48 - Restored torrent. Torrent: "El castillo ambulante (2004).HDrip"
+(I) 2026-04-21T12:17:48 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-21T12:17:48 - Using built-in WebUI.
+(N) 2026-04-21T12:17:48 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-21T12:17:48 - WebUI: Now listening on IP: *, port: 8081
+(W) 2026-04-21T12:17:55 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:127.0.0.1, username: admin
+(N) 2026-04-21T12:17:58 - WebAPI login success. IP: ::ffff:127.0.0.1
+(N) 2026-04-21T12:18:21 - qBittorrent termination initiated
+(N) 2026-04-21T12:18:21 - Saving resume data completed.
+(N) 2026-04-21T12:18:23 - BitTorrent session successfully finished.
+(N) 2026-04-21T12:18:23 - qBittorrent is now ready to exit
+(N) 2026-04-21T12:18:37 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2026-04-21T12:18:37 - Using config directory: /config/qBittorrent
+(N) 2026-04-21T12:18:37 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-21T12:18:37 - Peer ID: "-qB5140-"
+(I) 2026-04-21T12:18:37 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-21T12:18:37 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-21T12:18:37 - Local Peer Discovery support: ON
+(I) 2026-04-21T12:18:37 - Peer Exchange (PeX) support: ON
+(I) 2026-04-21T12:18:37 - Anonymous mode: OFF
+(I) 2026-04-21T12:18:37 - Encryption support: ON
+(I) 2026-04-21T12:18:37 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-21T12:18:37 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-21T12:18:37 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-21T12:18:37 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-21T12:18:37 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-21T12:18:37 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-04-21T12:18:37 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-21T12:18:37 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(N) 2026-04-21T12:18:37 - Restored torrent. Torrent: "Bob Esponja -  Patricio Esponja [DvdRip][Español Castellano][2015]"
+(N) 2026-04-21T12:18:37 - Restored torrent. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(N) 2026-04-21T12:18:37 - Restored torrent. Torrent: "El castillo ambulante (2004).HDrip"
+(I) 2026-04-21T12:18:37 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-21T12:18:37 - Using built-in WebUI.
+(N) 2026-04-21T12:18:37 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-21T12:18:37 - WebUI: Now listening on IP: *, port: 8081
+(W) 2026-04-21T12:18:48 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:127.0.0.1, username: admin
+(N) 2026-04-21T12:18:50 - WebAPI login success. IP: ::ffff:127.0.0.1
+(N) 2026-04-21T12:56:49 - WebAPI login success. IP: ::1
+(I) 2026-04-21T13:13:32 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-21T13:13:32 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-21T13:13:34 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-21T13:13:34 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-21T13:14:31 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-21T13:14:31 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-21T13:14:32 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-21T13:14:32 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-21T13:19:24 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-21T13:19:24 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-21T13:19:25 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-21T13:19:25 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-21T13:33:31 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-21T13:33:31 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-21T13:33:33 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-21T13:33:33 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(N) 2026-04-21T14:15:53 - qBittorrent termination initiated
+(N) 2026-04-21T14:15:53 - Saving resume data completed.
+(N) 2026-04-21T14:15:53 - BitTorrent session successfully finished.
+(N) 2026-04-21T14:15:53 - qBittorrent is now ready to exit
+(N) 2026-04-22T12:20:05 - qBittorrent v5.1.4 started. Process ID: 144
+(N) 2026-04-22T12:20:05 - Using config directory: /config/qBittorrent
+(N) 2026-04-22T12:20:05 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-22T12:20:05 - Peer ID: "-qB5140-"
+(I) 2026-04-22T12:20:05 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-22T12:20:05 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-22T12:20:05 - Local Peer Discovery support: ON
+(I) 2026-04-22T12:20:05 - Peer Exchange (PeX) support: ON
+(I) 2026-04-22T12:20:05 - Anonymous mode: OFF
+(I) 2026-04-22T12:20:05 - Encryption support: ON
+(I) 2026-04-22T12:20:05 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-22T12:20:05 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-22T12:20:05 - Successfully listening on IP. IP: "10.102.148.237". Port: "TCP/6881"
+(I) 2026-04-22T12:20:05 - Successfully listening on IP. IP: "10.102.148.237". Port: "UTP/6881"
+(I) 2026-04-22T12:20:05 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-22T12:20:05 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-04-22T12:20:05 - Successfully listening on IP. IP: "fe80::133b:f50d:92fa:6154%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-22T12:20:05 - Successfully listening on IP. IP: "fe80::133b:f50d:92fa:6154%wlp6s0". Port: "UTP/6881"
+(N) 2026-04-22T12:20:05 - Restored torrent. Torrent: "Bob Esponja -  Patricio Esponja [DvdRip][Español Castellano][2015]"
+(N) 2026-04-22T12:20:05 - Restored torrent. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(N) 2026-04-22T12:20:05 - Restored torrent. Torrent: "El castillo ambulante (2004).HDrip"
+(I) 2026-04-22T12:20:05 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-22T12:20:05 - Using built-in WebUI.
+(N) 2026-04-22T12:20:05 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-22T12:20:05 - WebUI: Now listening on IP: *, port: 8081
+(I) 2026-04-22T12:20:06 - Detected external IP. IP: "88.12.95.221"
+(I) 2026-04-22T12:21:12 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-22T12:21:12 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-22T12:21:13 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-22T12:21:13 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-22T15:20:05 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-22T15:20:05 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-22T15:20:06 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-22T15:20:06 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-22T23:30:48 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-22T23:30:48 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-22T23:30:48 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-22T23:30:48 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-23T09:37:31 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-23T09:37:31 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-23T09:37:32 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-23T09:37:32 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-23T18:36:38 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-23T18:36:38 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-23T18:36:40 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-23T18:36:40 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-23T23:25:10 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-23T23:25:10 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-24T09:30:17 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-24T09:30:17 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-24T09:30:17 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-24T09:30:17 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-24T13:25:34 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-24T13:25:34 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-24T13:25:35 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-24T13:25:35 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(N) 2026-04-24T14:20:29 - qBittorrent termination initiated
+(N) 2026-04-24T14:20:29 - Saving resume data completed.
+(N) 2026-04-24T14:20:29 - BitTorrent session successfully finished.
+(N) 2026-04-24T14:20:29 - qBittorrent is now ready to exit
+(N) 2026-04-24T15:15:13 - qBittorrent v5.1.4 started. Process ID: 144
+(N) 2026-04-24T15:15:13 - Using config directory: /config/qBittorrent
+(N) 2026-04-24T15:15:13 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-24T15:15:13 - Peer ID: "-qB5140-"
+(I) 2026-04-24T15:15:13 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-24T15:15:13 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-24T15:15:13 - Local Peer Discovery support: ON
+(I) 2026-04-24T15:15:13 - Peer Exchange (PeX) support: ON
+(I) 2026-04-24T15:15:13 - Anonymous mode: OFF
+(I) 2026-04-24T15:15:13 - Encryption support: ON
+(I) 2026-04-24T15:15:13 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-24T15:15:13 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-24T15:15:13 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-24T15:15:13 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2026-04-24T15:15:13 - Restored torrent. Torrent: "Bob Esponja -  Patricio Esponja [DvdRip][Español Castellano][2015]"
+(N) 2026-04-24T15:15:13 - Restored torrent. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(N) 2026-04-24T15:15:13 - Restored torrent. Torrent: "El castillo ambulante (2004).HDrip"
+(I) 2026-04-24T15:15:13 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-24T15:15:13 - Using built-in WebUI.
+(N) 2026-04-24T15:15:13 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-24T15:15:13 - WebUI: Now listening on IP: *, port: 8081
+(I) 2026-04-24T15:15:17 - Successfully listening on IP. IP: "10.166.148.91". Port: "TCP/6881"
+(I) 2026-04-24T15:15:17 - Successfully listening on IP. IP: "10.166.148.91". Port: "UTP/6881"
+(I) 2026-04-24T15:15:19 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-24T15:15:19 - Successfully listening on IP. IP: "fe80::7bce:acaa:586a:8c0%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T13:18:13 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T13:18:13 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T13:18:13 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T13:18:13 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T13:41:03 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T13:41:03 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T13:41:04 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T13:41:04 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:10:48 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:10:48 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:10:55 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:10:55 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:10:56 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:10:56 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:11:07 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:11:07 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:11:08 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:11:08 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:11:19 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:11:19 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:11:20 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:11:20 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:11:31 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:11:31 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:11:32 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:11:32 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:11:43 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:11:43 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:11:44 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:11:44 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:11:55 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:11:55 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:11:56 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:11:56 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:12:06 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:12:06 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:12:07 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:12:07 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:12:20 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:12:20 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:12:21 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:12:21 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:12:31 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:12:31 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:12:32 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:12:32 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:12:45 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:12:45 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:12:45 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:12:45 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:12:56 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:12:56 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:12:57 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:12:57 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:13:08 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:13:08 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:13:09 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:13:09 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:13:20 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:13:20 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:13:21 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:13:21 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:13:32 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:13:32 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:13:33 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:13:33 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:13:43 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:13:43 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:13:45 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:13:45 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:13:57 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:13:57 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:13:58 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:13:58 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:14:09 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:14:09 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:14:10 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:14:10 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:14:19 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:14:19 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:14:21 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:14:21 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T14:14:44 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T14:14:44 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T14:14:45 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T14:14:45 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(N) 2026-04-26T15:25:20 - qBittorrent v5.1.4 started. Process ID: 144
+(N) 2026-04-26T15:25:20 - Using config directory: /config/qBittorrent
+(N) 2026-04-26T15:25:20 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-26T15:25:20 - Peer ID: "-qB5140-"
+(I) 2026-04-26T15:25:20 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-26T15:25:20 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-26T15:25:20 - Local Peer Discovery support: ON
+(I) 2026-04-26T15:25:20 - Peer Exchange (PeX) support: ON
+(I) 2026-04-26T15:25:20 - Anonymous mode: OFF
+(I) 2026-04-26T15:25:20 - Encryption support: ON
+(I) 2026-04-26T15:25:20 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-26T15:25:20 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-26T15:25:20 - Successfully listening on IP. IP: "192.168.1.43". Port: "TCP/6881"
+(I) 2026-04-26T15:25:20 - Successfully listening on IP. IP: "192.168.1.43". Port: "UTP/6881"
+(I) 2026-04-26T15:25:20 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-26T15:25:20 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2026-04-26T15:25:20 - Restored torrent. Torrent: "Bob Esponja -  Patricio Esponja [DvdRip][Español Castellano][2015]"
+(N) 2026-04-26T15:25:20 - Restored torrent. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(N) 2026-04-26T15:25:20 - Restored torrent. Torrent: "El castillo ambulante (2004).HDrip"
+(I) 2026-04-26T15:25:20 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-26T15:25:20 - Using built-in WebUI.
+(N) 2026-04-26T15:25:20 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-26T15:25:20 - WebUI: Now listening on IP: *, port: 8081
+(I) 2026-04-26T15:25:20 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "TCP/6881"
+(I) 2026-04-26T15:25:20 - Successfully listening on IP. IP: "fe80::3e56:4226:b13d:b1ae%wlp6s0". Port: "UTP/6881"
+(I) 2026-04-26T15:25:20 - Detected external IP. IP: "88.12.95.221"
+(W) 2026-04-26T15:40:22 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(N) 2026-04-26T15:47:04 - Torrent download finished. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(W) 2026-04-26T15:50:22 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T16:00:22 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(N) 2026-04-26T16:18:48 - qBittorrent v5.1.4 started. Process ID: 148
+(N) 2026-04-26T16:18:48 - Using config directory: /config/qBittorrent
+(N) 2026-04-26T16:18:48 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-26T16:18:48 - Peer ID: "-qB5140-"
+(I) 2026-04-26T16:18:48 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-26T16:18:48 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-26T16:18:48 - Local Peer Discovery support: ON
+(I) 2026-04-26T16:18:48 - Peer Exchange (PeX) support: ON
+(I) 2026-04-26T16:18:48 - Anonymous mode: OFF
+(I) 2026-04-26T16:18:48 - Encryption support: ON
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "192.168.65.3". Port: "TCP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "192.168.65.3". Port: "UTP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "192.168.65.6". Port: "TCP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "192.168.65.6". Port: "UTP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "fdc4:f303:9324::3". Port: "TCP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "fdc4:f303:9324::3". Port: "UTP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "fe80::506d:efff:fe3c:7398%eth0". Port: "TCP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "fe80::506d:efff:fe3c:7398%eth0". Port: "UTP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "fdc4:f303:9324::6". Port: "TCP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "fdc4:f303:9324::6". Port: "UTP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "fe80::486c:4bff:fee3:f0c5%services1". Port: "TCP/6881"
+(I) 2026-04-26T16:18:48 - Successfully listening on IP. IP: "fe80::486c:4bff:fee3:f0c5%services1". Port: "UTP/6881"
+(N) 2026-04-26T16:18:48 - Restored torrent. Torrent: "Bob Esponja -  Patricio Esponja [DvdRip][Español Castellano][2015]"
+(N) 2026-04-26T16:18:48 - Restored torrent. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(N) 2026-04-26T16:18:48 - Restored torrent. Torrent: "El castillo ambulante (2004).HDrip"
+(I) 2026-04-26T16:18:48 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-26T16:18:48 - Using built-in WebUI.
+(N) 2026-04-26T16:18:48 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-26T16:18:48 - WebUI: Now listening on IP: *, port: 8081
+(W) 2026-04-26T16:18:48 - Failed to restore torrent. Files were probably moved or storage isn't accessible. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]". Reason: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com] fast resume rejected. file_stat(/download/Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]/Bob Esponja y La Gran Ola.avi): mismatching file size"
+(I) 2026-04-26T16:18:48 - Detected external IP. IP: "88.12.95.221"
+(W) 2026-04-26T16:33:49 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T16:43:49 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T16:53:49 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T17:03:50 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T17:13:51 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T17:23:52 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T17:33:53 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T17:43:53 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T17:53:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T18:03:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T18:13:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T18:23:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T18:33:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T18:43:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T18:53:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T19:03:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T19:13:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T19:23:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T19:33:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T19:43:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T19:53:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T20:03:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T20:13:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T20:23:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T20:33:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T20:43:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T20:53:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-26T21:03:54 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(N) 2026-04-27T19:05:06 - qBittorrent v5.1.4 started. Process ID: 145
+(N) 2026-04-27T19:05:06 - Using config directory: /config/qBittorrent
+(N) 2026-04-27T19:05:06 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-04-27T19:05:06 - Peer ID: "-qB5140-"
+(I) 2026-04-27T19:05:06 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2026-04-27T19:05:06 - Distributed Hash Table (DHT) support: ON
+(I) 2026-04-27T19:05:06 - Local Peer Discovery support: ON
+(I) 2026-04-27T19:05:06 - Peer Exchange (PeX) support: ON
+(I) 2026-04-27T19:05:06 - Anonymous mode: OFF
+(I) 2026-04-27T19:05:06 - Encryption support: ON
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "192.168.65.3". Port: "TCP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "192.168.65.3". Port: "UTP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "192.168.65.6". Port: "TCP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "192.168.65.6". Port: "UTP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "fdc4:f303:9324::3". Port: "TCP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "fdc4:f303:9324::3". Port: "UTP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "fe80::9048:26ff:fe26:a51d%eth0". Port: "TCP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "fe80::9048:26ff:fe26:a51d%eth0". Port: "UTP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "fdc4:f303:9324::6". Port: "TCP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "fdc4:f303:9324::6". Port: "UTP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "fe80::bc72:deff:fe36:e04f%services1". Port: "TCP/6881"
+(I) 2026-04-27T19:05:06 - Successfully listening on IP. IP: "fe80::bc72:deff:fe36:e04f%services1". Port: "UTP/6881"
+(N) 2026-04-27T19:05:06 - Restored torrent. Torrent: "Bob Esponja -  Patricio Esponja [DvdRip][Español Castellano][2015]"
+(N) 2026-04-27T19:05:06 - Restored torrent. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]"
+(N) 2026-04-27T19:05:06 - Restored torrent. Torrent: "El castillo ambulante (2004).HDrip"
+(I) 2026-04-27T19:05:06 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Apr 1 03:46:19 2026.
+(N) 2026-04-27T19:05:06 - Using built-in WebUI.
+(N) 2026-04-27T19:05:06 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-04-27T19:05:06 - WebUI: Now listening on IP: *, port: 8081
+(W) 2026-04-27T19:05:06 - Failed to restore torrent. Files were probably moved or storage isn't accessible. Torrent: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]". Reason: "Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com] fast resume rejected. file_stat(/download/Bob Esponja y La Gran Ola[dvdrip][spanish][www.lokotorrents.com]/Bob Esponja y La Gran Ola.avi): mismatching file size"
+(I) 2026-04-27T19:05:06 - Detected external IP. IP: "88.12.95.221"
+(W) 2026-04-27T19:05:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T19:15:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T19:25:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T19:35:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T19:45:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T19:55:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T20:05:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T20:15:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T20:25:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T20:35:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T20:45:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T20:55:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T21:05:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T21:15:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T21:25:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T21:35:08 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T21:45:09 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T21:55:09 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T22:05:09 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T22:15:09 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T22:25:10 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T22:35:10 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T22:45:10 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T22:55:10 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(N) 2026-04-27T23:00:53 - System wake-up event detected. Re-announcing to all the trackers...
+(W) 2026-04-27T23:05:10 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T23:15:11 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-27T23:25:11 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(N) 2026-04-27T23:54:53 - System wake-up event detected. Re-announcing to all the trackers...
+(N) 2026-04-28T10:30:11 - System wake-up event detected. Re-announcing to all the trackers...
+(W) 2026-04-28T10:33:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T10:43:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T10:53:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T11:03:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T11:13:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T11:23:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T11:33:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T11:43:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T11:53:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T12:03:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T12:13:14 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T12:23:15 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T12:33:15 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T12:43:15 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(W) 2026-04-28T12:53:15 - File error alert. Torrent: "El castillo ambulante (2004).HDrip". File: "/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi". Reason: "El castillo ambulante (2004).HDrip file_open (/downloads/El castillo ambulante (2004).HDrip/El castillo ambulante (2004).HDrip.avi) error: Permission denied"
+(N) 2026-04-28T13:00:56 - qBittorrent termination initiated
+(N) 2026-04-28T13:00:56 - Saving resume data completed.
+(N) 2026-04-28T13:00:56 - BitTorrent session successfully finished.
+(N) 2026-04-28T13:00:56 - qBittorrent is now ready to exit
+(N) 2026-04-28T13:01:07 - qBittorrent v5.1.4 started. Process ID: 147

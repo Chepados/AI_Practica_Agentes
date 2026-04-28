@@ -9,3 +9,4 @@ requests
 playwright
 qbittorrent-api
 rich
+bs4

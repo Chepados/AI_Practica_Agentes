@@ -18,12 +18,16 @@ from langchain_groq import ChatGroq
 from tools import *
 from langchain_core.tools import Tool, StructuredTool
 
-search_movie_tool = Tool.from_function(search_movie)
-search_torrent_tool = Tool.from_function(search_torrent)
-get_torrent_from_link_tool = Tool.from_function(get_torrent_from_link)
-get_available_torrent_files_tool = Tool.from_function(get_available_torrent_files)
-download_torrent_file_tool = Tool.from_function(download_torrent_file)
-get_torrent_client_status_tool = Tool.from_function(get_torrent_client_status)
+search_movie_tool = StructuredTool.from_function(search_movie)
+
+get_available_modules_tool = StructuredTool.from_function(get_available_modules)
+search_torrent_with_module_tool = StructuredTool.from_function(search_torrent_with_module)
+get_torrent_from_link_with_module_tool = StructuredTool.from_function(get_torrent_from_link_with_module)
+
+
+get_available_torrent_files_tool = StructuredTool.from_function(get_available_torrent_files)
+download_torrent_file_tool = StructuredTool.from_function(download_torrent_file)
+get_torrent_client_status_tool = StructuredTool.from_function(get_torrent_client_status)
 
 
 CONTEXT = """
@@ -33,9 +37,11 @@ Eres un agente conversacional para gestionar búsquedas y descargas de película
 
 1. **search_movie**: Busca películas en TMDB. Devuelve título, sinopsis, fecha, valoración, poster y backdrop.
    
-2. **search_torrent**: Encuentra links de descarga de torrents. (Recuerda poner el título en castellano y usar keywords simples *MUY IMPORTANTE busca solo las palabras clave del título y asegurate de que la ortografia es correcta*).
+2. **get_modules**: Devuelve una lista de los módulos de scrapping de torrents disponibles.
+
+2. **search_torrent_with_module**: Encuentra links de descarga de torrents. (Recuerda poner el título en castellano y usar keywords simples *MUY IMPORTANTE busca solo las palabras clave del título y asegurate de que la ortografia es correcta*), toma como entrada el nombre de la película y el módulo de scrapping a usar.
    
-3. **get_torrent_from_link**: Descarga el archivo .torrent desde un link.
+3. **get_torrent_from_link_with_module**: Descarga el archivo .torrent desde un link, toma como entrada el link obtenido en search_torrent_with_module y el módulo de scrapping a usar.
 
 4. **get_available_torrent_files**: Lista los archivos .torrent disponibles para iniciar su descarga.
 
@@ -47,9 +53,9 @@ Eres un agente conversacional para gestionar búsquedas y descargas de película
 ## FLUJO DE TRABAJO:
 
 - Cuando te pidan informacion de una película DEBES buscarla con search_movie.
-- Cuando te pidan opciones de descarga buscaras con search_torrent SOLO PALABRAS CLAVE e interpretaras los resultados dandole al usuario de manera ordenada las opciones más prometedores
+- Cuando te pidan opciones de descarga buscaras con search_torrent_with_module SOLO PALABRAS CLAVE e interpretaras los resultados dandole al usuario de manera ordenada las opciones más prometedores
 según sin se adaptan a lo que buscaba el usuario y que el almacenamiento no sea excesivo, en caso de que no encuentres ningún resultado prueba con una palábra clave más general es prioridad que al menos muestres algún resultado.
-- Cuando el usuario haya seleccionado la película que quiere descargar usa el link que te devolvió search_torrent para lanzar get_torrent_from_link y descargar el .torrent correspondiente.
+- Cuando el usuario haya seleccionado la película que quiere descargar usa el link que te devolvió search_torrent_with_module para lanzar get_torrent_from_link_with_module y descargar el .torrent correspondiente.
 - Si es usuario te pide hacer un listado de los torrents que tiene disponibles para iniciar descarga recuerda usar get_available_torrent_files.
 - Pasale el nombre de uno de estos archivos a download_torrent_file para iniciar la descarga
 - Si el usuario te pide conocer el status o alguna informacion sobre alguna descarga en curso o todas recuerda darle siempre la información más actualzada posible haciendo uso de get_torrent_client_status.
@@ -75,7 +81,7 @@ RECUERDA: Cada elemento de lista DEBE tener <br> al final. Sin excepciones. esto
 class Agent_handler:
     def __init__(self):
         self.llm = ChatGroq(
-            model="qwen/qwen3-32b",
+            model="openai/gpt-oss-20b",
         )
 
         #self.llm = ChatGoogleGenerativeAI(
@@ -90,7 +96,7 @@ class Agent_handler:
             model=self.llm,
             checkpointer=self.checkpointer,
             system_prompt=CONTEXT,
-            tools = [search_movie_tool, search_torrent_tool, get_torrent_from_link_tool, get_available_torrent_files_tool, download_torrent_file_tool, get_torrent_client_status_tool]
+            tools = [search_movie_tool, search_torrent_with_module_tool, get_torrent_from_link_with_module_tool, get_available_modules_tool, get_available_torrent_files_tool, download_torrent_file_tool, get_torrent_client_status_tool]
         )
 
         

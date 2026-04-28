@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from rich import print as rprint
-from film_scrapper import search_movie
+from .film_scrapper import search_movie
 
 def get_movie_info(titulo):
     """Obtiene información de la primera película encontrada buscando en TMDB."""
