@@ -16,7 +16,7 @@ conn_info = dict(
 )
 
 def get_available_torrent_files() -> str:
-    """Get a list of available torrent files."""
+    """Consigue la lista de archivos de torrent disponibles en nuestro sistema."""
     return os.listdir(torrent_files_dir)
 
 def download_torrent_file(file_name: str) -> str:
@@ -60,7 +60,12 @@ def get_torrent_client_status() -> str:
     return processed_info
 
 def remove_torrent_file(hash: str) -> str:
-    """Remove a torrent file by its hash."""
+    """
+    Borra un archivo de torrent de qbittorrent por su hash.
+    Solo borra el torrent de qbittorrent, no borra el archivo de torrent del sistema.
+    El `hash` es un identificador único para cada torrent. Se puede obtener de la función `get_torrent_client_status`,
+    que devuelve una lista de torrents con su información, incluyendo el hash.
+    """
     with qbittorrentapi.Client(**conn_info) as qbt_client:
         qbt_client.torrents_delete(delete_files=False, torrent_hashes=hash)
     return f"Torrent file removed: {hash}"

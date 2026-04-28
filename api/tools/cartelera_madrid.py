@@ -4,15 +4,15 @@ from rich import print as rprint
 from film_scrapper import search_movie
 
 def get_movie_info(titulo):
-    """Obtiene información de una película individualmente desde TMDB."""
+    """Obtiene información de la primera película encontrada buscando en TMDB."""
     tmdb_resultados = search_movie(titulo)
     info = tmdb_resultados[0] if tmdb_resultados else None
     return {"titulo": titulo, "info_tmdb": info}
 
-def scrape_cartelera_madrid():
+def get_cartelera_madrid():
     """
-    Obtiene la cartelera de Madrid usando requests + BeautifulSoup 
-    e integra la información de TMDB de forma paralela.
+    Obtiene la cartelera de películas actuales en los cines de Madrid. 
+    Cada película de la cartelera contiene también su información de TMDB.
     """
     url = "https://www.ecartelera.com/cines/0,30,1.html"
     headers = {
@@ -50,6 +50,9 @@ def scrape_cartelera_madrid():
 
 
 def format_movie(movie: dict) -> str:
+    """
+    Formatea la información de una película para mostrarla en el mensaje que se manda por Telegram/Alexa.
+    """
     info = movie.get("info_tmdb")
 
     # Guardamos la info de la peli
@@ -78,6 +81,10 @@ def format_movie(movie: dict) -> str:
         f"Sinopsis: {overview}"
     )
 def format_cartelera_message(movies, max_movies: int = 10) -> str:
+    """
+    Formatea la cartelera completa para mostrarla como string en el mensaje que se manda por Telegram/Alexa.
+    Ordena las películas por popularidad (número de votos) y muestra solo las top `max_movies` para no saturar el mensaje.
+    """
     if not movies:
         return "No he encontrado películas en la cartelera de Madrid."
 
@@ -102,7 +109,7 @@ if __name__ == "__main__":
     import time
     start = time.time()
     
-    lista_peliculas_json = scrape_cartelera_madrid()
+    lista_peliculas_json = get_cartelera_madrid()
     rprint(lista_peliculas_json)
     
     print(f"\n✨ Scraping completado en {time.time() - start:.2f} segundos.")

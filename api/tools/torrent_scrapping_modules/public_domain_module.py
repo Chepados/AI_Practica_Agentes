@@ -7,6 +7,9 @@ import os
 def search_torrent(movie_name: str) -> list[dict] | str:
     """
     Busca una película en publicdomaintorrents.info y devuelve un listado de resultados con sus respectivos links.
+    Es una lista de diccionarios con la siguiente información:
+    - name: el nombre de la película encontrada
+    - link: un link a la página de la película en publicdomaintorrents.info, donde se puede descargar el archivo torrent.
     """
     # Esta es una url con todas las películas de dominio público en la web.
     url = "https://www.publicdomaintorrents.info/nshowcat.html?category=ALL"
