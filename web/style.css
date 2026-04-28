@@ -12,6 +12,10 @@ body {
 #flex_contaner {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+
 }
 
 #header{
@@ -27,7 +31,7 @@ body {
     flex-direction: column;
     height: 80dvh;
     width: 60%;
-    align-self: center;
+    margin: auto;
     overflow-y: scroll;
 }
 

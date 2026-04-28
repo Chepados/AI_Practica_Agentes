@@ -44,7 +44,7 @@ def get_cartelera_madrid():
         for titulo in titulos:
             lista_peliculas.append(get_movie_info(titulo))
         
-    return [p for p in lista_peliculas if p.get("info_tmdb") is not None]
+    return [p for p in lista_peliculas if p.get("info_tmdb") is not None][:10]
 
 
 

@@ -38,6 +38,7 @@ def get_torrent_client_status() -> str:
     - progress: el progreso de la descarga en porcentaje
     - size: el tamaño del torrent en GB
     - state: el estado del torrent (downloading, paused, etc.)
+    - hash: el hash del torrent, un identificador único que se puede usar para eliminar el torrent de qbittorrent con la función `remove_torrent_file`
     - La función no recibe ningún argumento y devuelve una lista de diccionarios con la información de los torrents que se están descargando."""
     with qbittorrentapi.Client(**conn_info) as qbt_client:
         info = qbt_client.torrents_info()

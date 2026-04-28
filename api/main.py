@@ -23,11 +23,22 @@ search_movie_tool = StructuredTool.from_function(search_movie)
 get_available_modules_tool = StructuredTool.from_function(get_available_modules)
 search_torrent_with_module_tool = StructuredTool.from_function(search_torrent_with_module)
 get_torrent_from_link_with_module_tool = StructuredTool.from_function(get_torrent_from_link_with_module)
-
-
 get_available_torrent_files_tool = StructuredTool.from_function(get_available_torrent_files)
 download_torrent_file_tool = StructuredTool.from_function(download_torrent_file)
 get_torrent_client_status_tool = StructuredTool.from_function(get_torrent_client_status)
+remove_torrent_file_tool = StructuredTool.from_function(remove_torrent_file)
+
+profile_manager = ProfileManager()
+
+create_profile_tool = StructuredTool.from_function(profile_manager.create_profile)
+delete_profile_tool = StructuredTool.from_function(profile_manager.delete_profile)
+set_preference_tool = StructuredTool.from_function(profile_manager.set_preference)
+get_preferences_tool = StructuredTool.from_function(profile_manager.get_preferences)
+del_preference_tool = StructuredTool.from_function(profile_manager.del_preference)
+get_genres_tool = StructuredTool.from_function(profile_manager.get_genres)
+recomend_movies_tool = StructuredTool.from_function(profile_manager.recomend_movies)
+
+get_cartelera_madrid_tool = StructuredTool.from_function(get_cartelera_madrid)
 
 
 CONTEXT = """
@@ -35,19 +46,35 @@ Eres un agente conversacional para gestionar búsquedas y descargas de película
 
 ## HERRAMIENTAS DISPONIBLES:
 
-1. **search_movie**: Busca películas en TMDB. Devuelve título, sinopsis, fecha, valoración, poster y backdrop.
+1. **search_movie_tool**: Busca películas en TMDB. Devuelve título, sinopsis, fecha, valoración, poster y backdrop.
    
-2. **get_modules**: Devuelve una lista de los módulos de scrapping de torrents disponibles.
+2. **get_modules_tool**: Devuelve una lista de los módulos de scrapping de torrents disponibles.
 
-2. **search_torrent_with_module**: Encuentra links de descarga de torrents. (Recuerda poner el título en castellano y usar keywords simples *MUY IMPORTANTE busca solo las palabras clave del título y asegurate de que la ortografia es correcta*), toma como entrada el nombre de la película y el módulo de scrapping a usar.
+2. **search_torrent_with_module_tool**: Encuentra links de descarga de torrents. (Recuerda poner el título en castellano y usar keywords simples *MUY IMPORTANTE busca solo las palabras clave del título y asegurate de que la ortografia es correcta*), toma como entrada el nombre de la película y el módulo de scrapping a usar. NO LA USES SIN HABER USADO ANTES get_modules PARA SABER QUE MÓDULOS DE SCRAPPING TIENES DISPONIBLES, SI USAS UN MÓDULO QUE NO EXISTE TE DARÁ ERROR Y NO PODRÁS DESCARGAR LA PELÍCULA, ASÍ QUE RECUERDA USAR get_modules ANTES DE USAR ESTA HERRAMIENTA PARA SABER QUÉ MÓDULOS DE SCRAPPING TIENES DISPONIBLES. 
    
-3. **get_torrent_from_link_with_module**: Descarga el archivo .torrent desde un link, toma como entrada el link obtenido en search_torrent_with_module y el módulo de scrapping a usar.
+3. **get_torrent_from_link_with_module_tool**: Descarga el archivo .torrent desde un link, toma como entrada el link obtenido en search_torrent_with_module y el módulo de scrapping a usar. RECUERDA NO USARLA SI NO HAS USADO ANTES get_modules.
 
-4. **get_available_torrent_files**: Lista los archivos .torrent disponibles para iniciar su descarga.
+4. **get_available_torrent_files_tool**: Lista los archivos .torrent disponibles para iniciar su descarga. 
 
-5. **download_torrent_file**: Inicia la descarga de una película usando un archivo .torrent dado su nombre.
+5. **download_torrent_file_tool**: Inicia la descarga de una película usando un archivo .torrent dado su nombre.
 
-6. **get_torrent_client_status**: Muestra el estado de los torrents en descarga, incluyendo nombre, velocidad, progreso, tamaño y estado.
+6. **get_torrent_client_status_tool**: Muestra el estado de los torrents en descarga, incluyendo nombre, velocidad, progreso, tamaño y estado.
+
+7. **remove_torrent_file_tool**: Eliminar un torrent de qbittorrent por su hash. Solo borra el torrent de qbittorrent, no borra el archivo de torrent del sistema. El `hash` es un identificador único para cada torrent. Se puede obtener de la función `get_torrent_client_status_tool`, que devuelve una lista de torrents con su información, incluyendo el hash.
+
+Ademas tienes una serie de herramientas para gestionar perfiles de usuario y recomendaciones basadas en géneros:
+
+8. **create_profile_tool**: Crea un nuevo perfil de usuario para recomendaciones.
+9. **delete_profile_tool**: Elimina un perfil de usuario existente.
+10. **set_preference_tool**: Establece una preferencia de género para un perfil (una preferencia es un genero y una puntuacion)
+11. **get_preferences_tool**: Obtiene las preferencias de género de un perfil específico.
+12. **del_preference_tool**: Elimina una preferencia de género de un perfil específico.
+13. **get_genres_tool**: Devuelve una lista de los géneros disponibles para establecer preferencias. (Recuerda usarla para saber que géneros puedes usar a la hora de establecer preferencias para los perfiles)
+14. **recomend_movies_tool**: Devuelve una lista de recomendaciones de películas para un perfil específico, basándose en las preferencias establecidas para ese perfil.
+
+Ademas tienes una tool para obtener la cartelera de Madrid:
+
+15. **get_cartelera_madrid_tool**: Devuelve una lista de las películas actualmente en cartelera en Madrid, incluyendo su información obtenida de TMDB.
 
 
 ## FLUJO DE TRABAJO:
@@ -81,7 +108,7 @@ RECUERDA: Cada elemento de lista DEBE tener <br> al final. Sin excepciones. esto
 class Agent_handler:
     def __init__(self):
         self.llm = ChatGroq(
-            model="openai/gpt-oss-20b",
+            model="openai/gpt-oss-120b",
         )
 
         #self.llm = ChatGoogleGenerativeAI(
@@ -96,7 +123,7 @@ class Agent_handler:
             model=self.llm,
             checkpointer=self.checkpointer,
             system_prompt=CONTEXT,
-            tools = [search_movie_tool, search_torrent_with_module_tool, get_torrent_from_link_with_module_tool, get_available_modules_tool, get_available_torrent_files_tool, download_torrent_file_tool, get_torrent_client_status_tool]
+            tools = [search_movie_tool, search_torrent_with_module_tool, get_torrent_from_link_with_module_tool, get_available_modules_tool, get_available_torrent_files_tool, download_torrent_file_tool, get_torrent_client_status_tool, create_profile_tool, delete_profile_tool, set_preference_tool, get_preferences_tool, del_preference_tool, get_genres_tool, recomend_movies_tool, get_cartelera_madrid_tool, remove_torrent_file_tool]
         )
 
         
