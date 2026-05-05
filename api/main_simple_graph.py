@@ -42,7 +42,7 @@ tools = [
     del_preference_tool, get_genres_tool, recomend_movies_tool, get_cartelera_madrid_tool,
 ]
 
-llm_name = "openai/gpt-oss-120b"  
+llm_name = "openai/gpt-oss-20b"  
 
 llm             = ChatGroq(model=llm_name)
 llm_with_tools  = llm.bind_tools(tools)

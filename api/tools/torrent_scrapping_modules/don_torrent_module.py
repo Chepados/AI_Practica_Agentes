@@ -11,7 +11,7 @@ def search_torrent(movie_name : str) -> str:
 
 
     with sync_playwright() as p:
-        browser = p.firefox.launch()
+        browser = p.firefox.launch(headless=True)
         page = browser.new_page()
         page.goto("https://dontorrent.racing/")
         page.click('#Close_fa')
@@ -45,7 +45,7 @@ def get_torrent_from_link(link : str) -> str:
     """
 
     with sync_playwright() as p:
-        browser = p.firefox.launch()
+        browser = p.firefox.launch(headless=True)
         page = browser.new_page()
         page.goto(link)
         page.click('#Close_fa')

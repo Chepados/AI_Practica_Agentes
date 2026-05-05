@@ -33,7 +33,6 @@ def search_movie(string: str) -> dict:
     results = response.json().get('results', [])
     if not results:
         return []
-        TMDB
     response_df = pd.DataFrame(results)[["title", "overview", "release_date", "vote_average", "vote_count", "poster_path", "backdrop_path"]]
     return response_df.to_dict(orient="records")
 

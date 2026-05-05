@@ -23,7 +23,7 @@ function create_ai_msg(msg) {
 function send() {
     const human_msg = text_input.value;
     create_human_msg(human_msg)
-    fetch("http://127.0.0.1:8000/send", {
+    fetch("http://localhost:8000/send", {
         method : "POST",
         headers: {"Content-Type" : "application/json"},
         body : JSON.stringify({content:human_msg})
