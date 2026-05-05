@@ -13,7 +13,7 @@ def search_torrent(movie_name : str) -> str:
     with sync_playwright() as p:
         browser = p.firefox.launch()
         page = browser.new_page()
-        page.goto("https://dontorrent.reisen/")
+        page.goto("https://dontorrent.racing/")
         page.click('#Close_fa')
         page.fill('#query', movie_name)
         page.keyboard.press('Enter')
@@ -27,7 +27,7 @@ def search_torrent(movie_name : str) -> str:
             try:
                 torrents.append({
                     "name": film.inner_text().replace("\n", ""),
-                    "link": f"https://dontorrent.reisen{film.locator('a').get_attribute('href')}"
+                    "link": f"https://dontorrent.racing{film.locator('a').get_attribute('href')}"
                 })
             except Exception as e:
                 torrents.append({
@@ -61,4 +61,4 @@ def get_torrent_from_link(link : str) -> str:
     
 if __name__ == "__main__":
     rprint(search_torrent("spiderman"))
-    #get_torrent_from_link('https://dontorrent.reisen/pelicula/10890/Spider-Man-Spiderman-Mastered-in-4K')
+    #get_torrent_from_link('https://dontorrent.racing/pelicula/10890/Spider-Man-Spiderman-Mastered-in-4K')

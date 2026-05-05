@@ -10,7 +10,7 @@ print(os.getcwd())
 
 conn_info = dict(
     host="localhost",
-    port=8081,
+    port=8082,
     username="admin",
     password="316440",
 )
