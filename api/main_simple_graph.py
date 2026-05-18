@@ -7,6 +7,7 @@ load_dotenv()
 from langchain_core.messages import HumanMessage, SystemMessage, AnyMessage
 from langchain_core.tools import StructuredTool
 from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.prebuilt import ToolNode
 from langgraph.graph import StateGraph, START, END
@@ -42,9 +43,13 @@ tools = [
     del_preference_tool, get_genres_tool, recomend_movies_tool, get_cartelera_madrid_tool,
 ]
 
-llm_name = "openai/gpt-oss-120b"  
+OPENAI_API_KEY="aqui pones tu api key"
 
-llm             = ChatGroq(model=llm_name)
+llm_name = "gpt-4o-mini"
+# llm             = ChatGroq(model=llm_name)
+
+llm = ChatOpenAI(model=llm_name, openai_api_key=OPENAI_API_KEY)
+
 llm_with_tools  = llm.bind_tools(tools)
 
 SYNTH_PROMPT = """
@@ -55,6 +60,7 @@ las herramientas necesarias y devolver datos estructurados para un nodo formatea
 - NO generes respuestas conversacionales.
 - Ejecuta las herramientas necesarias y filtra los resultados antes de devolverlos.
 - Output: JSON limpio y filtrado. Nunca datos en bruto sin procesar.
+- Si el usuario te hace una pregunta directa, genera un json estructurado cun una respuesta clara, e informa de tus capacidades al usuario para guiarlo.
 
 ## FILTRADO DE RESULTADOS (MUY IMPORTANTE):
 - Cuando el usuario busque una película concreta, devuelve SOLO la coincidencia 
@@ -102,7 +108,6 @@ para insertarse dentro de un div de chat bubble. Sin <html>, <head>, <body> ni d
 ## LAYOUT BASE (siempre respetado):
 - max-width: 460px. Nunca uses scroll horizontal.
 - Estilos en <style> incrustado. Sin JS salvo animaciones CSS puras.
-- Todo el contenido debe caber verticalmente sin desbordar o con scroll overflow.
 - Cuida el estilo debe de ser atractivo, legible, organizado, cor colores oscutos y estetica de tarjetas nunca html simple.
 
 ## LAYOUT SEGÚN INTENT:
@@ -110,36 +115,33 @@ para insertarse dentro de un div de chat bubble. Sin <html>, <head>, <body> ni d
 **search_movie — UNA película principal:**
 Si movies tiene 1 resultado (búsqueda directa):
   - Genera una tarjeta que incluya el poster y el backdrop, no te doy muchas indicaciones te dejo libertad,
-  asegurate de que el ancho maximo se de y que no haya overflow en todo caso añade scroll vertical, 
   asegurate de hacer un diseño vistoso y llamativo incluyendo toda la informacion relevante de la peli,
   las disposiciones deben de ser horizontales
 
 
 Si movies tiene 2-3 resultados (ambigüedad):
-  - Lista vertical de tarjetas compactas (poster pequeño + título + año + rating).
+  - Lista horizontal de tarjetas compactas (poster pequeño + título + año + rating).
   - Pregunta al usuario cuál quiere.
 
 **search_torrent:**
-  - Tabla compacta: calidad | tamaño | semillas. Sin imágenes.
-  - Fondo var(--bg), bordes sutiles con var(--accent).
+  - Tabla compacta: Nombre | Calidad |. Sin imágenes.
+  - Dale un diseño vistoso y elegante. 
 
 **torrent_status:**
   - Tarjeta por torrent: nombre, barra de progreso CSS (width: X%), velocidad, estado.
 
 **cartelera / recommend:**
   - Grid Max 6 items.
-  - Cada poster: imagen + título debajo. Sin scroll horizontal.
+  - Cada poster: imagen + título debajo. 
 
 **other / error:**
-  - Texto simple estilizado con var(--bg) y var(--text).
+  - Texto simple estilizado.
 
 ## REGLAS ABSOLUTAS:
-- NUNCA uses overflow-x: scroll ni scroll horizontal de ningún tipo.
-- NUNCA muestres más resultados de los que hay en el JSON.
-- SIEMPRE aplica el tema de color correcto según el género — nunca dejes el verde/teal por defecto.
+- Recuerda para completar el link a una imagen usar siempre el formato completo: https://image.tmdb.org/t/p/w500/{poster_path} o backdrop_path.
 - Si no hay poster_url ni backdrop_url, diseña sin imágenes (no pongas img tags rotos).
 - Tu output es SOLO HTML. Sin texto fuera de las etiquetas.
-- Genera el HTML puro para incrustar sin la coletilla '''html''' ni nada más.
+- Genera el HTML puro para incrustar sin la coletilla '''html''' ni nada más IMPORTANTE.
 - No generes estilos que sobreescriban el layout base solo la tarjeta que generes pero nada de fuera. Ni tampoco
 otras etiquetas que hayas podido generar, asi que usa si puede estilos incrustados dentro del html siempre que peudas.
 """

@@ -43,57 +43,100 @@ class ProfileManager:
         self.genres_df = response
 
 
-    def create_profile(self, name: str) -> None:
+    def create_profile(self, name: str) -> str:
         """Crea un nuevo perfil con el nombre dado."""
-        self.profiles[name] = {}
+        try:
+            if name in self.profiles:
+                return f"El perfil {name} ya existe."
+            self.profiles[name] = {}
+            return f"El perfil {name} ha sido creado exitosamente."
+        except Exception as e:
+            return f"Error: {e}"
 
-    def delete_profile(self, name: str) -> None:
+    def delete_profile(self, name: str) -> str:
         """Elimina el perfil con el nombre dado."""
-        assert name in self.profiles.keys(), f"El perfil {name} no existe."
-        del self.profiles[name]
+        try:
+            del self.profiles[name]
+            return f"El perfil {name} ha sido eliminado."
+        except KeyError:
+            return f"Error: El perfil {name} no existe."
+        except Exception as e:
+            return f"Error: {e}"
 
-    def set_preference(self, profile_name: str, genre_name: str, preference: int) -> None:
+    def set_preference(self, profile_name: str, genre_name: str, preference: int) -> str:
         """Establecer una preferencia para el recomendador. Debes especificar un perfil, un genero, y la nota mínima que se le debe dar a una película para que se recomiende. La nota mínima debe ser un número entero entre 1 y 10."""
-        assert profile_name in self.profiles.keys(), f"El perfil {profile_name} no existe."
-        assert genre_name in self.genres_df["name"].values, f"El género {genre_name} no existe."
-        assert preference in range(1, 11), f"La preferencia debe ser un número entero entre 1 y 10."
+        try:
+            if profile_name not in self.profiles.keys():
+                raise ValueError(f"El perfil {profile_name} no existe.")
+            if genre_name not in self.genres_df["name"].values:
+                raise ValueError(f"El género {genre_name} no existe.")
+            if preference not in range(1, 11):
+                raise ValueError("La preferencia debe ser un número entero entre 1 y 10.")
 
-        self.profiles[profile_name][genre_name] = preference
+            self.profiles[profile_name][genre_name] = preference
+            return f"Preferencia establecida correctamente."
+        except ValueError as e:
+            return f"Error: {e}"
+        except Exception as e:
+            return f"Error: {e}"
 
-    def get_preferences(self, profile_name: str) -> dict:
+    def get_preferences(self, profile_name: str) -> str:
         """Obtener las preferencias de un perfil específico. Devuelve un diccionario con los géneros y las preferencias establecidas para ese perfil."""
-
-        assert profile_name in self.profiles.keys(), f"El perfil {profile_name} no existe."
-        return self.profiles[profile_name]
+        try:
+            if profile_name not in self.profiles.keys():
+                raise ValueError(f"El perfil {profile_name} no existe.")
+            return str(self.profiles[profile_name])
+        except ValueError as e:
+            return f"Error: {e}"
+        except Exception as e:
+            return f"Error: {e}"
     
-    def del_preference(self, profile_name: str, genre_name: str) -> None:
+    def del_preference(self, profile_name: str, genre_name: str) -> str:
         """Eliminar una preferencia para el recomendador. Debes especificar un perfil y un genero."""
+        try:
+            if profile_name not in self.profiles.keys():
+                raise ValueError(f"El perfil {profile_name} no existe.")
+            if genre_name not in self.genres_df["name"].values:
+                raise ValueError(f"El género {genre_name} no existe.")
 
-        assert profile_name in self.profiles.keys(), f"El perfil {profile_name} no existe."
-        assert genre_name in self.genres_df["name"].values, f"El género {genre_name} no existe."
+            del self.profiles[profile_name][genre_name]
+            return f"Preferencia eliminada correctamente."
+        except ValueError as e:
+            return f"Error: {e}"
+        except KeyError:
+             return f"Error: La preferencia {genre_name} no existe en el perfil {profile_name}."
+        except Exception as e:
+            return f"Error: {e}"
 
-        del self.profiles[profile_name][genre_name]
-
-    def get_genres(self) -> list:
+    def get_genres(self) -> str:
         """Devuelve una lista con los géneros disponibles para establecer preferencias en los perfiles."""
-        return self.genres_df["name"].tolist()
+        try:
+            return str(self.genres_df["name"].tolist())
+        except Exception as e:
+            return f"Error: {e}"
 
-    def recomend_movies(self, profile_name: str) -> list:
+    def recomend_movies(self, profile_name: str) -> str:
         """Devuelve una lista de recomendaciones de películas para un perfil específico. La recomendación se basa en las preferencias establecidas para ese perfil. Devuelve una lista de diccionarios con la información relevante de las películas recomendadas, ordenadas por popularidad de mayor a menor. La información relevante incluye el título, la sinopsis, la fecha de lanzamiento, la valoración media, el número de valoraciones, la ruta del poster y la ruta del backdrop."""
+        try:
+            if profile_name not in self.profiles.keys():
+                raise ValueError(f"El perfil {profile_name} no existe.")
 
+            full_recomendation_list = list()
 
-        full_recomendation_list = list()
+            for genre_name, preference in self.profiles[profile_name].items():
+            
+                genre_id = self.genres_df[self.genres_df["name"] == genre_name].index[0]
+                print(" Genre id:", genre_id)
+                url = f"https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&vote_average.gte={preference}&with_genres={genre_id}"
 
-        for genre_name, preference in self.profiles[profile_name].items():
-        
-            genre_id = self.genres_df[self.genres_df["name"] == genre_name].index[0]
-            print(" Genre id:", genre_id)
-            url = f"https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&vote_average.gte={preference}&with_genres={genre_id}"
+                response = requests.get(url, headers=headers).json()["results"]
+                full_recomendation_list.extend(response)
 
-            response = requests.get(url, headers=headers).json()["results"]
-            full_recomendation_list.extend(response)
-
-        return sorted(full_recomendation_list, key=lambda x: x["popularity"], reverse=True)[:10]
+            return str(sorted(full_recomendation_list, key=lambda x: x["popularity"], reverse=True)[:10])
+        except ValueError as e:
+            return f"Error: {e}"
+        except Exception as e:
+            return f"Error: {e}"
 
         
 
