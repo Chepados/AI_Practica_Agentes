@@ -1,1 +1,1 @@
-{"StartTimeUtc":"2026-05-05T13:39:22.8903124Z","EndTimeUtc":"2026-05-05T13:39:22.9013432Z","Status":"Completed","Name":"Limpiar colecciones y listas de reproducci\u00F3n","Key":"CleanCollectionsAndPlaylists","Id":"3a025083141d3c17dd96d5f9b951287b"}
+{"StartTimeUtc":"2026-05-18T08:21:00.3597895Z","EndTimeUtc":"2026-05-18T08:21:00.3658654Z","Status":"Completed","Name":"Limpiar colecciones y listas de reproducci\u00F3n","Key":"CleanCollectionsAndPlaylists","Id":"3a025083141d3c17dd96d5f9b951287b"}

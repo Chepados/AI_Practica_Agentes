@@ -1,0 +1,49 @@
+services:
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - WEBUI_PORT=8082
+      - TORRENTING_PORT=6881
+    volumes:
+      - ../films:/download
+      - ./torrent_config:/config
+    restart: unless-stopped
+    network_mode: host # 8082
+    
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - JELLYFIN_PublishedServerUrl=http://192.168.0.5
+    volumes:
+      - ./jellyfin_config:/config
+      - ../films:/data/movies
+    restart: unless-stopped
+    network_mode: host # 8096
+    
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.api
+    container_name: api
+    network_mode: host # 8000
+    restart: unless-stopped
+
+    volumes:
+      - ../torrents:/app/torrents
+      - ../films:/app/films
+  
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "8081:80"
+    volumes:
+      - ../web:/usr/share/nginx/html:ro

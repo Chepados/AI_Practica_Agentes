@@ -73,6 +73,6 @@ def remove_torrent_file(hash: str) -> str:
 
 if __name__ == "__main__":
     print(get_available_torrent_files())
-    print(download_torrent_file("La_lista_de_Schindler_1993_HDRip.torrent"))
+    print(download_torrent_file('forrest-gump--blury-1080p.torrent'))
     rprint(get_torrent_client_status())
 

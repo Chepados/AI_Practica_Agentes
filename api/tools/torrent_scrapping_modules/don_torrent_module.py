@@ -2,6 +2,9 @@ from playwright.sync_api import sync_playwright
 from pprint import pprint
 from langchain.tools import tool
 from rich import print as rprint
+from time import sleep
+
+base_url = "https://dontorrent.rocks"
 
 
 def search_torrent(movie_name : str) -> str:
@@ -13,11 +16,18 @@ def search_torrent(movie_name : str) -> str:
     with sync_playwright() as p:
         browser = p.firefox.launch(headless=True)
         page = browser.new_page()
-        page.goto("https://dontorrent.racing/")
-        page.click('#Close_fa')
+        page.goto(base_url)
+
+        try:
+            close_popup = page.locator('#Close_fa')
+            close_popup.click()
+        except:
+            pass
+
         page.fill('#query', movie_name)
         page.keyboard.press('Enter')
-        page.wait_for_selector(".card-body")
+
+        page.wait_for_selector('.card-body>p>span')
         films = page.locator('.card-body>p>span').all()
 
 
@@ -27,13 +37,16 @@ def search_torrent(movie_name : str) -> str:
             try:
                 torrents.append({
                     "name": film.inner_text().replace("\n", ""),
-                    "link": f"https://dontorrent.racing{film.locator('a').get_attribute('href')}"
+                    "link": f"{base_url}{film.locator('a').get_attribute('href')}"
                 })
             except Exception as e:
                 torrents.append({
                     "name": film.inner_text().replace("\n", ""),
                     "link": "No se ha encontrado un link de descarga para esta película"
                 })
+
+    print("Torrents encontrados:")
+    rprint(torrents)
 
 
     return torrents
@@ -44,12 +57,26 @@ def get_torrent_from_link(link : str) -> str:
     Ejecuta la descarga de un archivo .torrent a partir de un link obtenido en la función search_torrent.
     """
 
+    print(f"Descargando torrent desde el link: {link}")
+
     with sync_playwright() as p:
+
         browser = p.firefox.launch(headless=True)
         page = browser.new_page()
         page.goto(link)
-        page.click('#Close_fa')
+        sleep(10)
+
+        try:
+            close_popup = page.locator('#Close_fa')
+            close_popup.click()
+        except:
+            pass
+
+        print("Buscando el botón de descarga...")
+
         download_button = page.locator('a.protected-download')
+
+        print("Iniciando la descarga...")
 
         with page.expect_download() as download_info:
             download_button.click()
@@ -60,5 +87,5 @@ def get_torrent_from_link(link : str) -> str:
     return f"{download.suggested_filename} descargado correctamente"
     
 if __name__ == "__main__":
-    rprint(search_torrent("spiderman"))
-    #get_torrent_from_link('https://dontorrent.racing/pelicula/10890/Spider-Man-Spiderman-Mastered-in-4K')
+    #rprint(search_torrent("spiderman"))
+    get_torrent_from_link('https://dontorrent.rocks/documental/418/419/La-tecnologia-de-Spiderman')
