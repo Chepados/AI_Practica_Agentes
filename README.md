@@ -1,4 +1,39 @@
 # AI_Practica_Agentes
+## Home_cinema_Server
+
+### Despliegue
+
+Para empezar debemos de configurar las api keys necesarias.
+
+En la carpeta /api hay que crear un archivo .env con el siguiente contenido:
+
+```
+TMDB_API_KEY=tu_api_key_de_tmdb
+GROQ_API_KEY=tu_api_key_de_groq
+```
+
+En esa misma carpeta, en el archivo main_simple_graph.py, hay que configurar la variable OPENAI_API_KEY con tu api key de OpenAI. On Caso contrario, quitar la parte comentada que corresponde a GROQ (gratuito) lo cual dará un funcionamiento correcto siempre y cunado no se superen los límites de uso gratuitos.
+
+Despliegue del contenedor:
+
+```
+docker compose -f docker/docker-compose.yml up --build
+```
+
+De manerá que podremos acceder a los siguientes servicios:
+
+- web_app_agente: http://localhost:80
+- api_docs: http://localhost:8000
+- Servidor_Jellyfin: http://localhost:8096
+- Web QbitTorrent: http://localhost:8082
+
+### Demo en vídeo
+
+Se incluye una demostración funcional 
+
+**[Ver video telegram en YouTube](https://youtu.be/pBDz8zvv5Yc)**
+**[Ver video del agente en YouTube](https://youtu.be/pBDz8zvv5Yc)**
+---
 
 ## Módulo de Alexa
 
